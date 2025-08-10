@@ -94,3 +94,4 @@ C:\source\LogWebApp\obj\Debug\net9.0\refint\LogWebApp.dll
 C:\source\LogWebApp\obj\Debug\net9.0\LogWebApp.pdb
 C:\source\LogWebApp\obj\Debug\net9.0\LogWebApp.genruntimeconfig.cache
 C:\source\LogWebApp\obj\Debug\net9.0\ref\LogWebApp.dll
+C:\source\LogWebApp\obj\Debug\net9.0\LogWebApp.sourcelink.json
