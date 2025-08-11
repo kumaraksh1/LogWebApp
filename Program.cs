@@ -55,6 +55,6 @@ app.MapGet("/log-test", (ILogger<Program> log) =>
     log.LogError("2025-07-14T01:52:35.4223689Z 2025-07-14 10:52:35.09l KH01 IK002：処理を開始します。");
     log.LogInformation("##############################");
     return "Logs pushed — check Azure Log Stream!";
-})
+});
 
 app.Run();
