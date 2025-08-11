@@ -33,6 +33,23 @@ app.MapGet("/log-test", (ILogger<Program> log) =>
     log.LogInformation("GET /log-test called at {Time}", DateTime.UtcNow);
     log.LogWarning("Testing warning log from /log-test");
     log.LogError("Testing error log from /log-test");
+    log.LogInformation("===========================");
+    log.LogError("KH01 IK003:処理を終了します。 トランザクションID:400000000025");
+    log.LogError("KH01 IK002:処理を開始します。");
+    log.LogError("KH01 IK003:処理を終了します。 トランザクションID:300000000007");
+    log.LogError("KH01 IK002:処理を開始します。");
+    log.LogError("KH01 IK003:処理を終了します。 トランザクションID:020000000013");
+    log.LogError("KH01 IK002:処理を開始します。");
+    log.LogError("KH01 IK003:処理を終了します。 トランザクションID:130000000001");
+    log.LogError("KH01 IK002:処理を開始します。");
+    log.LogError("KH01 IK003:処理を終了します。 トランザクションID:300000000007");
+    log.LogError("KH01 IK002:処理を開始します。");
+    log.LogError("KH01 IK003:処理を終了します。 トランザクションID:020000000013");
+    log.LogError("KH01 IK002:処理を開始します。");
+    log.LogError("KH01 IK003:処理を終了します。 トランザクションID:400000000025");
+    log.LogError("KH01 IK002:処理を開始します。");
+    log.LogError("KH01 IK003:処理を終了します。 トランザクションID:510000000031");
+    log.LogInformation("===========================");
     return "Logs pushed — check Azure Log Stream!";
 });
 
