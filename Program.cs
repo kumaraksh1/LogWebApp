@@ -50,7 +50,11 @@ app.MapGet("/log-test", (ILogger<Program> log) =>
     log.LogError("KH01 IK002:処理を開始します。");
     log.LogError("KH01 IK003:処理を終了します。 トランザクションID:510000000031");
     log.LogInformation("===========================");
+
+    log.LogInformation("##############################");
+    log.LogError("2025-07-14T01:52:35.4223689Z 2025-07-14 10:52:35.09l KH01 IK002：処理を開始します。");
+    log.LogInformation("##############################");
     return "Logs pushed — check Azure Log Stream!";
-});
+})
 
 app.Run();
